@@ -1,0 +1,27 @@
+#!/usr/bin/env bash
+# Put the edu_unit binary that ships with this repository on PATH.
+set -euo pipefail
+
+SOURCE="${BASH_SOURCE[0]:-$0}"
+REPO_DIR="$(cd "$(dirname "$SOURCE")" && pwd)"
+RC="${HOME}/.bashrc"
+MARKER="# csse120-ece: put edu_unit on PATH"
+
+if [ ! -x "${REPO_DIR}/edu_unit" ]; then
+    echo "install_edu_unit: ${REPO_DIR}/edu_unit not found or not executable" >&2
+    exit 1
+fi
+
+touch "$RC"
+
+if grep -Fq "$MARKER" "$RC"; then
+    echo "edu_unit is already set up in ${RC}."
+else
+    {
+        printf '\n%s\n' "$MARKER"
+        printf 'export PATH="%s:$PATH"\n' "$REPO_DIR"
+    } >> "$RC"
+    echo "Added ${REPO_DIR} to PATH in ${RC}."
+fi
+
+echo "Run 'bash' to start a new shell, then run edu_unit from any directory."
