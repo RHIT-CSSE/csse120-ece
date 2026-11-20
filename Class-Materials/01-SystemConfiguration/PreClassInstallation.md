@@ -79,8 +79,7 @@ then asks you to create a UNIX username and password:
 - **Username**: lowercase letters and digits, no spaces (for example, `jsmith`). This is
   separate from your Rose account and you can name it anything you wish.
 - **Password**: typing does not echo anything — no asterisks, no dots. Type it and press
-  Enter twice. Make sure you will remember the password - it doesn't need to be super
-  secure, but it wont be easy to recover your files should you forget it.
+  Enter twice.   This does not need to be super secure.
 
 ### Step 4: Verify the install
 
@@ -143,8 +142,8 @@ edit and debug code that lives in your Ubuntu distribution.
 2. Create a folder and open it in VS Code:
 
    ```bash
-   mkdir -p ~/csse120
-   cd ~/csse120
+   mkdir /tmp/testdir
+   cd /tmp/testdir
    code .
    ```
 
@@ -159,19 +158,9 @@ edit and debug code that lives in your Ubuntu distribution.
    uname -s
    ```
 
-   You should see `/home/<your-username>/csse120` and `Linux`. If you see a `C:\...`
+   You should see `/tmp/testdir` and `Linux`. If you see a `C:\...`
    path or `MINGW`/`Windows`, you are in a Windows terminal, not WSL.
 
-## Final checklist
-
-| # | Check | How |
-|---|---|---|
-| 1 | Ubuntu 26.04 LTS is installed on WSL 2 | `wsl -l -v` shows `Ubuntu` or `Ubuntu-26.04` with `VERSION 2` |
-| 2 | `wsl` opens Ubuntu by default | `wsl` from PowerShell gives a Linux prompt |
-| 3 | `code` is on your PATH | `code --version` prints a version number |
-| 4 | WSL extension is installed | Extensions view lists **WSL** under **Installed** |
-| 5 | VS Code is attached to Ubuntu | Bottom-left status bar reads **WSL: Ubuntu** or **WSL: Ubuntu-26.04** |
-| 6 | You can create a folder in Linux and open it | `mkdir -p ~/csse120 && cd ~/csse120 && code .` |
 
 ## Troubleshooting
 

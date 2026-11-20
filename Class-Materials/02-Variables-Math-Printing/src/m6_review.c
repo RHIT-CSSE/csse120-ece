@@ -137,15 +137,14 @@ int main(void) {
     // -------------------------------------------------------------------------
     // TODO: 6.
     //   Ensure that no yellow TODO markers remain,
-    //   verify that your code works, then COMMIT and PUSH your work as before.
+    //   then verify that your code works from the Unix command line:
+    //      edu_unit m6.lua
     //  _
-    //   If you've completed all of the modules, submit your code to Gradescope
-    //   as demonstrated by your instructor.
+    //   If every test succeeds, submit your solution file to Gradescope as
+    //   demonstrated by your instructor:
+    //      m6_review.c
     //  _
-    //   From the Unix command line:
-    //      git add m6_review.c
-    //      git commit -m "progress on m6"
-    //      git push
+    //   Upload the .c source file, not the compiled .bin file.
     // -------------------------------------------------------------------------
 
     return 0;
