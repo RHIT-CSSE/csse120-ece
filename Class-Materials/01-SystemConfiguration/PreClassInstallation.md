@@ -170,7 +170,7 @@ Verity**, which needs a Chrome extension and a Windows application. Install both
 **Windows**, not in Ubuntu: you take assessments in your Windows browser, outside WSL.
 
 The full vendor walkthrough is
-[Verity Setup - Students.pdf](Verity%20Setup%20-%20Students.pdf). The summary:
+[Verity Setup - Students.pdf](Verity-Setup-Students.pdf). The summary:
 
 1. **Use Chrome.** If you do not have it, install Chrome from
    <https://www.google.com/chrome/>; the extension comes from the Chrome Web Store.
