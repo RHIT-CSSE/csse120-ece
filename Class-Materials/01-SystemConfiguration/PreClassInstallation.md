@@ -1,11 +1,12 @@
-# System Configuration: WSL, Ubuntu 26.04 LTS, and VS Code
+# System Configuration: WSL, Ubuntu 26.04 LTS, VS Code, and YuJa Verity
 
-Before the first class, install two things on your own Windows laptop:
+Before the first class, install three things on your own Windows laptop:
 
 1. **WSL 2** (Windows Subsystem for Linux) with an **Ubuntu 26.04 LTS** distribution
 2. **Visual Studio Code** (VS Code) with the **WSL** extension
+3. **YuJa Verity** — the Chrome extension and Lockdown App used for proctored quizzes and tests
 
-Both installs are free. Budget about 30 minutes, and expect one reboot.
+All three installs are free. Budget about 40 minutes, and expect one reboot.
 
 > These instructions assume a Windows machine. If you plan to use a Mac or a
 > computer that already runs Linux, talk to the instructor before class. Your
@@ -161,6 +162,29 @@ edit and debug code that lives in your Ubuntu distribution.
    You should see `/tmp/testdir` and `Linux`. If you see a `C:\...`
    path or `MINGW`/`Windows`, you are in a Windows terminal, not WSL.
 
+
+## Part 3: Install YuJa Verity
+
+Proctored assessments — including practice quizzes and tests — run under **YuJa
+Verity**, which needs a Chrome extension and a Windows application. Install both on
+**Windows**, not in Ubuntu: you take assessments in your Windows browser, outside WSL.
+
+The full vendor walkthrough is
+[Verity Setup - Students.pdf](Verity%20Setup%20-%20Students.pdf). The summary:
+
+1. **Use Chrome.** If you do not have it, install Chrome from
+   <https://www.google.com/chrome/>; the extension comes from the Chrome Web Store.
+2. **Add the Verity browser extension.** Follow
+   [Downloading the Verity Browser Extension from the Chrome Web Store](https://support.yuja.com/hc/en-us/articles/6938734031511-Downloading-the-Verity-Browser-Extension-from-the-Chrome-Web-Store).
+3. **Install the Verity Lockdown App.** Follow
+   [Downloading the Verity Desktop Lockdown App](https://support.yuja.com/hc/en-us/articles/14203286095767-Downloading-the-Verity-Desktop-Lockdown-App#h_01HA32BZKQVTTG231TX2QNHEY2).
+4. **Authenticate yourself.** In your Moodle course, click the **YuJa Verity** LTI
+   link and follow
+   [Authenticating Yourself on YuJa Verity](https://support.yuja.com/hc/en-us/articles/17836266435223-Authenticating-Yourself-on-YuJa-Verity#01H8PFS22CTCQ462EEMKPS5EET).
+
+You complete these setup steps only once. If the YuJa Verity link is not visible in
+Moodle yet, finish steps 1–3 and ask the instructor about step 4 before the first
+proctored assessment.
 
 ## Troubleshooting
 
